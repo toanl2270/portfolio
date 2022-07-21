@@ -1,0 +1,65 @@
+@use "../global/" as g;
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    font-weight: bold;
+@include g.breakpoint (tablet) {
+    margin-top: 13vh;
+    margin-bottom: 3vh;
+}
+@include g.breakpoint (sp) {
+    display: none;
+
+}
+}
+.pagenation-sp {
+    display: none;
+
+    @include g.breakpoint (sp) {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 2vh 3vh 2vh;
+    color: #707070;
+    font-size: 1.6em;
+}
+}
+
+.pagination p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 500;
+    
+}
+
+.pagination .prev {
+    color: #707070;
+    border: none;
+    font-size: 1.6em;
+    align-items: center;
+}
+.pagination .next {
+    color: #707070;
+    border: none;
+    font-size: 1.6em;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.pagination li {
+    display: inline;
+    margin-right: 10px;
+    padding:5px 10px;
+    border:1.5px #ccc solid;color:#707070;
+    font-size: 1.6em;
+    color: #707070;
+    background-color: #fff;
+}
+    
+.pagination .first {background-color:#3C2B1C;color:#fff;}
+    
+    
