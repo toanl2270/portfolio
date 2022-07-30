@@ -310,6 +310,14 @@ body {
   line-height: 1.4;
 }
 
+.l-header {
+  display: flex;
+}
+
+.l-header__icon {
+  display: flex;
+}
+
 .l-sidebar_open {
   top: 0;
   left: 55%;
